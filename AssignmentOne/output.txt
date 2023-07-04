@@ -1,0 +1,60 @@
+runfile('/Users/harissujethan/Desktop/Computer Science/Assignments /a1.py', wdir='/Users/harissujethan/Desktop/Computer Science/Assignments ')
+
+Welcome to Savings Calculator, Please Enter Your Savings Goal (Do Not Include Commas, decimals, words, or $): 10000
+
+Please Enter Month or Year (This Will Determine if the Calculations Should be Monthly or Yearly): year
+
+Please Enter Your Yearly Income: 50000
+
+We will now begin you yearly expenses, How MANY yearly expenses do You have?: 10
+
+Enter Amount: 15000
+
+Enter Amount: 12000
+
+Enter Amount: 800
+
+Enter Amount: 2000
+
+Enter Amount: 782
+
+Enter Amount: 125
+
+Enter Amount: 980
+
+Enter Amount: 250
+
+Enter Amount: 20
+
+Enter Amount: 250
+Total Yearly Expense 32207
+Therefore it will take 0.5620187714269657 years to reach your savings goal
+Or 205.13685157084245 days
+Or 29.224976114202214 weeks
+
+
+
+
+runfile('/Users/harissujethan/Desktop/Computer Science/Assignments /a1.py', wdir='/Users/harissujethan/Desktop/Computer Science/Assignments ')
+
+Welcome to Savings Calculator, Please Enter Your Savings Goal (Do Not Include Commas, decimals, words, or $): 2000
+
+Please Enter Month or Year (This Will Determine if the Calculations Should be Monthly or Yearly): Month
+
+Please Enter Your Monthly Income: 4500
+
+We will now begin you monthly expenses, How MANY monthly expenses Do You Have?: 5
+
+Enter Amount: 1200
+
+Enter Amount: 800
+
+Enter Amount: 500
+
+Enter Amount: 200
+
+Enter Amount: 20
+Total Monthly Expense 2720
+Therefore it will take 1.1235955056179776 months to reach your savings goal
+Or 34.17606741573034 days
+Or 0.09363295880149813 years

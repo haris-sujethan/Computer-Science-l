@@ -1,0 +1,208 @@
+#Question One
+
+List1=[]
+x=0
+y=10
+while x<y:
+    element=input("Please Enter A String: ")
+    List1.append(element)
+    x+=1
+    
+print("\n")
+print("In Order")
+print("\n")
+for i in range(len(List1)):
+    print(i,"/10""\t",List1[i])
+
+print("\n")
+
+print("In Reverse")
+print("\n") 
+for i in range(len(List1)-1,-1,-1):
+    print(i,"/10""\t",List1[i])
+
+
+
+
+
+#Question Two
+
+def max(L):
+    
+    i = 0
+    for a in L:
+        if type(a)==float:
+         if i==0:
+             x=a
+             i=1
+         else:
+             if x<a:
+                 x=a
+    if i==0:
+       
+        return 'None'
+    
+    return 'the largest object of type float is',x
+
+
+
+
+
+#Question Three
+
+def longest(L):
+    
+    x=0
+    for i in L:
+        
+        if x==0:
+            largestyet=i
+            x=1 
+        else:
+            if len(largestyet)<len(i):
+                largestyet=i
+    return largestyet
+
+
+
+
+
+#Question Four
+
+#Part a)
+T=()
+L=[]
+for x in range(1,101):
+    
+    L.append(x)
+    L=list(T)
+    L.append(x)
+    T=tuple(L)
+print(T)
+print(L)
+
+#part b)
+T2=()
+L_2=[]
+for x in range(1,102):
+    
+   if x%2!=0:
+    L_2.append(x)
+    L_2=list(T2)
+    L_2.append(x)
+    T2=tuple(L_2)
+print(T2)
+print(L_2)
+    
+#part c)
+T3=()
+L_3=[]
+for x in range(1,50):
+   
+    x = x**2
+    L_3.append(x)
+    L_3=list(T3)
+    L_3.append(x)
+    T3=tuple(L_3)
+print(T3)
+print(L_3)
+
+#part d)
+T4=()
+L_4=[]
+n = 0
+import random
+while n<60: 
+    x = random.randrange(0, 50)
+    L_4.append(x)
+    L_4=list(T4)
+    L_4.append(x)
+    T4=tuple(L_4)
+    n+=1
+print(T4)
+print(L_4)
+    
+#part e)
+T5=()
+L_5=[]
+for x in range(1,51):
+   
+    x = 0
+    L_5.append(x)
+    L_5=list(T5)
+    L_5.append(x)
+    T5=tuple(L_5)
+print(T5)
+print(L_5)
+
+
+
+
+
+#Question Five
+
+L= [(i) for i in range(1,101)]
+print(L)
+
+L_2=[i for i in range(1,102) if i%2!=0]
+print(L_2)
+
+L_3=[i**2 for i in range(1,50)]
+print(L_3)
+
+import random
+L_4=[(random.randrange(0, 50)) for i in range(0,60)]
+print(L_4)
+
+L_5=[(0) for i in range(1,51)] 
+print(L_5)
+
+
+
+
+
+#Question Six
+
+
+def distance(poly1, poly2):
+    import math
+        
+    x1 = poly1[0]
+    y1 = poly1[1]
+    x2 = poly2[0]
+    y2 = poly2[1]
+        
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+
+x = print(distance((-3, 8), (-1, 4)))
+
+
+
+
+
+#Question Seven
+
+def permutation(L):
+    import random    
+    P= []
+    C= list(L)
+    
+    while(len(C)!=0):
+        
+        index = random.randrange(0, len(C))
+        
+        element = C.pop(index)
+        
+        P.append(element)
+    
+    return P
+
+print(permutation(range(0, 30)))
+print(permutation(range(0, 30)))
+print("\n")
+print(permutation([19, 4, 3, 17]))
+print(permutation([19, 4, 3, 17]))
+print("\n")
+print(permutation([(0, 0), (20, 0), (20, 10), (0, 10)]))
+print(permutation([(0, 0), (20, 0), (20, 10), (0, 10)]))

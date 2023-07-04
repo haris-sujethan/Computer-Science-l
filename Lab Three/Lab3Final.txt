@@ -1,0 +1,333 @@
+#Question One 
+
+x = int(input('Enter a Number'))
+if x<0:
+    print('negative')
+elif x==0:
+    print('zero')
+else:
+    print('positive')
+
+
+
+
+#Question Two 
+
+x = float(input('Enter a Number'))
+
+ouputString = ""
+
+if x>0:
+    ouputString += 'postive '
+else:
+    ouputString += 'negative '
+    
+if abs(x) < 1:
+    ouputString += 'small'
+elif abs(x) > 1000:
+    ouputString +='large'
+    
+
+if x==0:
+    ouputString = 'zero'
+print(ouputString)
+
+
+
+
+#Question Three
+
+x = int(input('Enter a Number'))
+
+if x<0:
+    x=x*-1 
+
+if x>1000000:
+    print('lots')
+
+elif x==1000000:
+    print('7 digits')
+
+elif x>=100000:
+    print('6 digits')
+
+elif x>=10000:
+    print('5 digits')
+    
+elif x>=1000:
+    print('4 digits')
+
+elif x>=100:
+    print('3 digits')
+    
+elif x>=10:
+    print('2 digits')
+
+elif x>=1:
+    print('1 digit')
+
+
+
+
+#Question Four 
+x = int(input('Enter a Number'))
+y = int(input('Enter a Number'))
+z= int(input('Enter a Number'))
+
+if x==y==z:
+    print('All the same')
+
+elif x!=y!=z:
+    print('all different')
+    
+else:
+    print('neither')
+
+
+
+
+#Question Five
+
+x = int(input('Enter a Number'))
+y = int(input('Enter a Number'))
+z = int(input('Enter a Number'))
+
+if x<y<z:
+ print('increasing')
+elif x>y>z:
+ print('decreasing')
+else:
+ print('neither')
+
+
+
+
+#Question Six
+
+x = int(input('Enter a Number'))
+y = int(input('Enter a Number'))
+z = int(input('Enter a Number'))
+
+q = input("strict or lenient")
+
+
+if q =='strict':
+
+   if x<y<z:
+       print('increasing')
+   elif x>y>z:
+       print('decreasing')
+   else:
+       print('neither') 
+  
+
+ 
+if q =='lenient':
+    
+   if x==z==y:
+      print('increasing and decreasing')
+
+   elif x<=y<=z:
+       print('increasing')
+   elif x>=y>=z:
+       print('decreasing')
+   else:
+       print('neither') 
+
+
+
+
+# Question Seven
+
+x = int(input('Enter a Number'))
+y = int(input('Enter a Number'))
+z = int(input('Enter a Number'))
+
+outputString=""
+
+if x<=y<=z or x>=y>=z:
+    outputString += "in order "
+else:
+    outputString += "not in order "
+    
+if x<=y<=z:
+    outputString += "ascending"
+
+elif x>=y>=z:
+    outputString += "descending"
+    
+print(outputString)
+
+
+
+
+#Question Eight 
+
+A = int(input('Enter  a Number'))
+B = int(input('Enter  a Number'))
+C = int(input('Enter  a Number'))
+D = int(input('Enter  a Number'))
+
+if A==B and C==D and A==C and B==D or A==D and B==C:
+    print('two pairs')
+
+else:
+    print('not two pairs')
+
+
+
+
+#Question Nine
+
+typet= input('What Type of Temperature? (C for Celsius or F for Fahrenheit)')
+typea= int(input('What is the Temperature Value?'))
+
+if typet == 'C' or typet == 'c':
+    if typea<=0:
+        print('Solid')
+    elif typea>0 and typea<100:
+        print('Liquid')
+    elif typea>=100:
+        print('Gaseous')
+
+if typet == 'F' or typet == 'f':
+    if typea<=32:
+        print('Solid')
+    elif typea>32 and typea<212:
+        print('Liquid')
+    elif typea>=212:
+        print('Gaseous')
+
+
+
+
+#Question Ten
+Grade = input('Enter a Capital Letter Grade (with symbol if applicable)')
+
+if Grade =='F+':
+    print(0)
+    
+elif Grade =='F':
+    print(0)
+    
+elif Grade =='F-':
+    print(0)
+    
+elif Grade == 'A+':
+    print(4.3)
+    
+elif Grade == 'A':
+    print(4.0)
+    
+elif Grade == 'A-':
+    print(3.7)
+    
+elif Grade == 'B+':
+    print(3.3)
+    
+elif Grade == 'B':
+    print(3.0)
+    
+elif Grade == 'B-':
+    print(2.7)
+
+elif Grade == 'C+':
+    print(2.3)
+    
+elif Grade == 'C':
+    print(2.0)
+    
+elif Grade == 'C-':
+    print(1.7)
+
+elif Grade == 'D+':
+    print(1.3)
+    
+elif Grade == 'D':
+    print(1.0)
+    
+elif Grade == 'D-':
+    print(0.7)
+
+else:
+    print('Incorrect Input Value')
+
+
+
+
+#Question Eleven
+
+sum = 0
+for x in range(2,101):
+    if x % 2 == 0:
+        sum = sum+x
+
+print(sum)
+
+
+
+
+#Question Twelve 
+
+sum = 0
+for x in range(0, 101):
+    sum = sum + x*x
+
+print(sum)
+
+
+
+
+#Question Thirteen 
+
+for x in range (0,21):
+    print(2**x)
+
+
+
+
+#Question Fourteen
+
+y= int(input('Enter a Number'))
+z= int(input('Enter a Number'))
+
+sum = 0
+for x in range(y,z):
+    if x % 2 != 0:
+        sum = sum+x
+
+print(sum)
+
+
+
+
+#Question Fifteen 
+
+x = input("Enter a Number")
+
+total = 0
+
+i = 0
+
+while i < len(x):
+   if int(x[i]) % 2 != 0:
+       total += int(x[i])
+   i += 1
+
+print(total)
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+

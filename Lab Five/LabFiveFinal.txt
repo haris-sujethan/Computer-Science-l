@@ -1,0 +1,205 @@
+#Question One
+def helloWorld():
+    print("Hello World")
+
+for i in range(10):
+    helloWorld()
+
+
+
+
+#Question Two
+name = input('Enter a Name')
+
+def Hello(name):
+    print('Hello ' + name)
+
+Hello(name)
+
+
+
+
+#Question Three
+firstname= input('Enter First Name ')
+lastname= input('Enter Last Name ')
+
+
+def hello(firstname,lastname):
+    print("Hello "+firstname + " " + lastname)
+    print("Hello "+lastname + ", " + firstname)
+    
+hello(firstname,lastname)
+
+
+
+
+#Question Four
+phrase= input("Enter a Phrase ")
+n = int(input("Enter How Many Times You Want To print Your Phrase: "))
+
+
+def repeatPhrase(phrase, n):
+    x=0
+    while x<n :
+        print (phrase.lower())
+        x=x+1
+        if x<n:
+            print (phrase.upper())
+            x=x+1
+        
+repeatPhrase(phrase, n)
+
+
+
+
+#Question Five
+n = int(input("Enter a Number: "))
+
+def timestable(n):
+
+    for m in range(1,n+1):
+        for t in range(1,n+1):
+            print(m*t, end="\t")
+        print("\n") #\n creates new line 
+
+timestable(n)
+
+
+
+
+#Question Six
+n = int(input("Enter a Number: "))
+
+def perfectcube(n):
+
+    boolean = False
+    limit = round(abs(n)**(1/3))
+    for x in range(0,limit + 1):
+      if  x**3 == abs(n) :
+          boolean = True
+      
+    if boolean:
+        print('Yes,',n,'is a perfect cube')
+   
+    else:
+        print('No,',n,'is not a perfect cube')
+
+    
+perfectcube(n)
+
+
+
+
+#Question Seven
+list=[]
+odd = False
+numbers = int(input('Enter a Number '))
+list+=[numbers]
+while(numbers!=0):
+    numbers=int(input('Enter a Number '))
+    if numbers==0:
+        break
+    list+=[numbers]
+    
+        
+def biggestOdd(n: list):
+
+    print(n)
+    for x in n:
+        if abs(x)%2 ==1:
+            max = x
+            odd = True
+            break;
+        print(max)
+        
+    
+            
+    for y in n:
+        if abs(y)%2 == 1:
+            if abs(y)> abs(max):
+                max = y
+                
+
+
+    if odd == False:
+        print('0')
+            
+        
+    else:
+        print(max)
+    
+        
+    
+    
+biggestOdd(list)
+list1 = [-55, -33, -10, 100, -5, 0]
+biggestOdd(list1)
+
+
+
+
+#Question Eight
+def biggestBuried(s): 
+    num, num2 = 0, 0
+      
+    # start traversing the given string 
+    for i in range(len(s)):
+          
+        if s[i] >= "0" and s[i] <= "9":
+            num = num * 10 + int(int(s[i]) - 0)
+        else:
+            num2 = max(num2, num)
+            num = 0
+          
+    return max(num2, num)
+
+
+print(biggestBuried('abcd51kkk3kk19ghi')) 
+print(biggestBuried('kkk32abce@@-33bb14zzz')) 
+print(biggestBuried('this15isast22ring-55'))
+
+
+
+
+#Question Nine
+x = int(input("Enter a Number "))
+
+epsilon = float(input("Enter a Number "))
+ 
+def squareRoot(x, epsilon):
+    
+     epsilonX2 = epsilon**2
+     
+     Guess = 0
+     
+     answer = 0.0
+     
+     while abs(answer**2 - x) >= epsilon and answer<=x:
+         answer += epsilonX2
+     Guess += 1
+    
+     if abs(answer**2 - x) >= epsilon:
+         print('Failed')
+         
+     else:
+         print(str(answer),' is close to the square root of ',str(x))
+
+squareRoot(x, epsilon)
+
+
+
+
+#Question Ten
+n = int(input("Enter a Number ")) 
+
+def decimalToBinary(n):
+    global binary # Global is visible throughout the program
+    binary = []
+    while n >=1 :   
+        binary.append(n%2)
+        n = n//2
+        
+    binary.reverse()
+    print("The Binary Number is: ", binary) 
+
+decimalToBinary(n)
